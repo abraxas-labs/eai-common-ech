@@ -1,0 +1,54 @@
+root = true
+
+[*]
+indent_style = space
+
+[*.{csproj, prop, targets}]
+indent_size = 2
+tab_width = 2
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = false
+
+[*.cs]
+indent_size = 4
+tab_width = 4
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# csharp styles
+csharp_style_namespace_declarations = file_scoped:warning
+csharp_prefer_braces = true:warning
+
+# copyright
+file_header_template = (c) Copyright 2023 by Abraxas Informatik AG\nFor license information see LICENSE file
+
+# ************************************
+# Generated eCH Files
+# ************************************
+# [{src/eCH-*/**/*.cs, src/eEK-*/**/*.cs, src/eVRSG-/**/*.cs}]
+dotnet_diagnostic.SA1300.severity = none # accepted for generated code base.
+dotnet_diagnostic.SA1504.severity = none # accepted for generated code base.
+dotnet_analyzer_diagnostic.category-StyleCop.CSharp.ReadabilityRules.severity = none
+dotnet_diagnostic.SA1117.severity = none
+dotnet_diagnostic.SA1201.severity = none
+dotnet_diagnostic.SA1202.severity = none
+dotnet_diagnostic.SA1203.severity = none
+dotnet_diagnostic.SA1513.severity = none
+dotnet_diagnostic.SA1401.severity = none
+dotnet_diagnostic.SA1413.severity = none
+dotnet_diagnostic.SA1601.severity = none
+dotnet_diagnostic.SA1602.severity = none
+dotnet_diagnostic.SA1606.severity = none
+dotnet_diagnostic.SA1611.severity = none
+dotnet_diagnostic.SA1612.severity = none
+dotnet_diagnostic.SA1614.severity = none
+dotnet_diagnostic.SA1616.severity = none
+dotnet_diagnostic.SA1625.severity = none
+dotnet_diagnostic.CA1062.severity = none
+dotnet_diagnostic.CS0108.severity = none
+dotnet_diagnostic.CS0169.severity = none
+dotnet_diagnostic.IDE1006.severity = none
+dotnet_diagnostic.RCS1102.severity = silent
+dotnet_diagnostic.S5332.severity = none
