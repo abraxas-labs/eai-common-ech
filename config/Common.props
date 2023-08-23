@@ -1,0 +1,59 @@
+<Project>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>10</LangVersion>
+    <Authors>Abraxas Informatik AG</Authors>
+    <Company>Abraxas Informatik AG</Company>
+    <Product>Eai.Common.eCH-Versioned</Product>
+    <Copyright>Copyright 2023 (c) Abraxas Informatik AG. All rights reserved.</Copyright>
+    <PackageIcon>abraxas.png</PackageIcon>
+    <!--<Nullable>enable</Nullable>-->
+    <IsPackable>true</IsPackable>
+    <Deterministic>true</Deterministic>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\abraxas.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <Target Name="GenerateFileHashes" AfterTargets="PostBuildEvent" Condition="'$(Configuration)' == 'Release'">
+    <PropertyGroup>
+      <HashOutPath>$(OutDir)\$(ProjectName).sha256</HashOutPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <FilesToHash Include="$(OutDir)$(TargetFileName)" />
+    </ItemGroup>
+
+    <GetFileHash Files="@(FilesToHash)" Algorithm="SHA256">
+      <Output TaskParameter="Items"
+        ItemName="OutFilesWithHashes" />
+    </GetFileHash>
+
+    <ItemGroup>
+      <OutFilesWithHashes>
+        <RelativeOutPath>$([System.IO.Path]::GetRelativePath($(OutDir), '%(Identity)'))</RelativeOutPath>
+      </OutFilesWithHashes>
+    </ItemGroup>
+
+    <WriteLinesToFile File="$(HashOutPath)" Lines="@(OutFilesWithHashes->'%(FileHash) %(RelativeOutPath)')" Overwrite="true"/>
+    <Message Importance="High" Text="@(OutFilesWithHashes->'%(RelativeOutPath) SHA256: %(FileHash)')" />
+
+    <ItemGroup>
+      <Content Include="$(HashOutPath)">
+        <Pack>true</Pack>
+        <PackagePath>lib\$(TargetFramework)</PackagePath>
+      </Content>
+    </ItemGroup>
+  </Target>
+</Project>

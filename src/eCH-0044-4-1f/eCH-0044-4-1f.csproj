@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Transformation classes for the eCH-0044-f V4.1 schema.</Description>
+    <PackageTags>Abraxas eCH-0044-f V4.1</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eai.Common.eCH.AttributeChecker\Eai.Common.eCH.AttributeChecker.csproj" />
+    <ProjectReference Include="..\eCH-0044-4-1\eCH-0044-4-1.csproj" />
+  </ItemGroup>
+
+</Project>

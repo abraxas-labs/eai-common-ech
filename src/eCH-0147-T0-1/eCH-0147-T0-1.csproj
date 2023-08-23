@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Product>Eai.Common.eCH-Versioned</Product>
+    <Copyright>Copyright 2023 (c) Abraxas Informatik AG. All rights reserved.</Copyright>
+    <PackageIconUrl></PackageIconUrl>
+    <RepositoryUrl></RepositoryUrl>
+    <RepositoryType></RepositoryType>
+    <Description>Transformation classes for the eCH-0147 VT0.1 schema.</Description>
+    <PackageTags>Abraxas eCH-0147 VT0.1</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eai.Common.eCH.AttributeChecker\Eai.Common.eCH.AttributeChecker.csproj" />
+    <ProjectReference Include="..\eCH-0058-3-0\eCH-0058-3-0.csproj" />
+    <ProjectReference Include="..\eCH-0039-2-0\eCH-0039-2-0.csproj" />
+    <ProjectReference Include="..\eCH-0046-1-0\eCH-0046-1-0.csproj" />
+  </ItemGroup>
+
+</Project>

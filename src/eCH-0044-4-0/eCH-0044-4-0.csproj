@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Transformation classes for the eCH-0044 V4.0 schema.</Description>
+    <PackageTags>Abraxas eCH-0044 V4.0</PackageTags>
+  </PropertyGroup>
+
+
+</Project>

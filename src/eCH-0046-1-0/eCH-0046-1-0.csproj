@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Transformation classes for the eCH-0046 V1.0 schema.</Description>
+    <PackageTags>Abraxas eCH-0046 V1.0</PackageTags>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\eCH-0010-3-0\eCH-0010-3-0.csproj" />
+    <ProjectReference Include="..\eCH-0044-1-0\eCH-0044-1-0.csproj" />
+  </ItemGroup>
+
+</Project>

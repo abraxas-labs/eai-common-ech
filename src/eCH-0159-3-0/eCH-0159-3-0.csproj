@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Transformation classes for the eCH-0159 V3.0 schema.</Description>
+    <PackageTags>Abraxas eCH-0159 V3.0</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eai.Common.eCH.AttributeChecker\Eai.Common.eCH.AttributeChecker.csproj" />
+    <ProjectReference Include="..\eCH-0058-5-0\eCH-0058-5-0.csproj" />
+    <ProjectReference Include="..\eCH-0155-3-0\eCH-0155-3-0.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Product>Eai.Common.eEK-Versioned</Product>
+    <Copyright>Copyright 2023 (c) Abraxas Informatik AG. All rights reserved.</Copyright>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl></RepositoryUrl>
+    <RepositoryType></RepositoryType>
+    <Description>Transformation classes for the eEK-0020 V1.1 schema.</Description>
+    <PackageTags>Abraxas eEK-0020 V1.1</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eai.Common.eCH.AttributeChecker\Eai.Common.eCH.AttributeChecker.csproj" />
+    <ProjectReference Include="..\eCH-0011-8-1\eCH-0011-8-1.csproj" />
+    <ProjectReference Include="..\eCH-0021-7-0\eCH-0021-7-0.csproj" />
+    <ProjectReference Include="..\eCH-0058-5-0\eCH-0058-5-0.csproj" />
+    <ProjectReference Include="..\eCH-0135-1-0\eCH-0135-1-0.csproj" />
+  </ItemGroup>
+
+</Project>

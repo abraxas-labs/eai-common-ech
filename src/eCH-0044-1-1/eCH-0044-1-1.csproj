@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Product>Eai.Common.eCH-Versioned</Product>
+    <Copyright>Transformation classes for the eCH-0157/4 schema.</Copyright>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl></RepositoryUrl>
+    <RepositoryType></RepositoryType>
+    <Description>Transformation classes for the eCH-0044 V1.1 schema.</Description>
+    <PackageTags>Abraxas eCH-0044 V1.1</PackageTags>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Eai.Common.eCH.AttributeChecker\Eai.Common.eCH.AttributeChecker.csproj" />
+  </ItemGroup>
+
+</Project>

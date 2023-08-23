@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Transformation classes for the eCH-0020-f V3.0 schema.</Description>
+    <PackageTags>Abraxas eCH-0020-f V3.0</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eai.Common.eCH.AttributeChecker\Eai.Common.eCH.AttributeChecker.csproj" />
+    <ProjectReference Include="..\eCH-0006-2-0\eCH-0006-2-0.csproj" />
+    <ProjectReference Include="..\eCH-0007-5-0\eCH-0007-5-0.csproj" />
+    <ProjectReference Include="..\eCH-0007-5-0f\eCH-0007-5-0f.csproj" />
+    <ProjectReference Include="..\eCH-0010-5-1\eCH-0010-5-1.csproj" />
+    <ProjectReference Include="..\eCH-0011-8-1\eCH-0011-8-1.csproj" />
+    <ProjectReference Include="..\eCH-0011-8-1f\eCH-0011-8-1f.csproj" />
+    <ProjectReference Include="..\eCH-0020-3-0\eCH-0020-3-0.csproj" />
+    <ProjectReference Include="..\eCH-0021-7-0\eCH-0021-7-0.csproj" />
+    <ProjectReference Include="..\eCH-0021-7-0f\eCH-0021-7-0f.csproj" />
+    <ProjectReference Include="..\eCH-0044-4-1\eCH-0044-4-1.csproj" />
+    <ProjectReference Include="..\eCH-0044-4-1f\eCH-0044-4-1f.csproj" />
+    <ProjectReference Include="..\eCH-0058-5-0\eCH-0058-5-0.csproj" />
+  </ItemGroup>
+
+</Project>
